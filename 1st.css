@@ -1,0 +1,157 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    
+}
+  
+  /* Set a background color and font for the whole page */
+  body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Create a header with a background image */
+  header {
+    
+    background-image: url("752673.jpg");
+    background-size: cover;
+    background-position: center top;
+    text-align:right;
+    padding: 300px 0; /* Increase the padding to expand the header vertically */
+    margin-bottom: 20px;
+    color: #e8dfdf;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    transition: background-image 0.5s ease-in-out;
+  }  
+  /* Style the header title and subtitle */
+  header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  header p {
+    position: relative;
+    left: center;
+    font-size: 35px;
+   
+  }
+  h2{
+    text-align: center;
+    line-height: 100%;
+    color: #ffffff;
+  }
+  h3{
+    text-align: center;
+    color: #ffffff;
+  }
+  /* Style the navigation menu */
+  nav {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    margin-bottom: 20px;
+    line-height: 60px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center-align the text within the navigation bar */
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+    line-height: 20px;
+  }
+  
+  nav a:hover {
+    color: #ff6600; /* Change the color on hover */
+    transform: translateY(-10px);
+    text-decoration: underline;
+  }
+nav h1{ 
+    display: inline;
+    margin-right: 20px;
+  }  
+  /* Create a main content container */
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style anime listings */
+  .anime-listing {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    
+  }
+  .anime-listing p
+  {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .anime-card {
+    border: 1px solid #8c8484;
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+    transition: transform 0.2s;
+    line-height: 40px;
+  }
+  
+  .anime-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 60px rgb(0, 0, 0); /* Add a larger shadow on hover */
+  }
+  
+  .anime-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+  }
+  
+  /* Style the footer */
+  footer {
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 60px;
+  }
+  
+  
+  /* Add some responsive styles */
+  @media (max-width: 768px) {
+    header {
+      padding: 60px 0;
+    }
+  
+    header h1 {
+      font-size: 28px;
+    }
+  
+    header p {
+      font-size: 16px;
+    }
+  
+    .anime-card {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Website</title>
+    <link rel="stylesheet" href="1st.css"> <!-- Link to your CSS file -->
+
+</head>
+<body>
+    <nav>
+        <!-- <img src="6558852.jpg"> -->
+        <ul style="display: inline;">
+            <li><a href="#"><h1>Home</h1></a></li>
+            <li><a href="#"><h1>Anime List</h1></a></li>
+            <li><a href="#"><h1>Genres</h1></a></li>
+            <li><a href="#"><h1>Contact</h1></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+       
+        <header id="header">            
+            <h1>LUFFY SENPAI</h1>
+            <p>Your source for all things in anime!<br>Is here!<br>lets enjoy</p>
+        </header>
+    
+       
+    
+        <h2>Latest Anime Releases</h2>
+        <br>
+        <br>
+
+        <div class="anime-listing">
+            <div class="anime-card">
+                <h3>Anime Title 1</h3>
+                <p>Description of Anime 1.</p>
+                <img src="8673858.jpg" alt="Anime Title 1">
+                
+            </div>
+
+            <div class="anime-card">
+                <h3>Anime Title 2</h3>
+                <p>Description of Anime 2.</p>
+                <img src="17344e5df38aa8eae885e3cd214a667b.jpg" alt="Anime Title 2">
+                
+            </div>
+            
+            <div class="anime-card">
+                <h3>Anime Title 3</h3>
+                <p>Description of Anime 3.</p>
+                <img src="cafa581d998fd16c32ef1d8d4faf2ece.jpg" alt="Anime Title 3">
+            </div>
+            <div class="anime-card">
+                <h3>Anime Title 4</h3>
+                <p>Description of Anime 4.</p>
+                <img src="6558852.jpg" alt="Anime Title 4">
+                
+            </div>
+            <div class="anime-card">
+                <h3>Anime Title 5</h3>
+                <p>Description of Anime 5.</p>
+                <img src="anime-black-clover-asta-black-clover-wallpaper-preview.jpg" alt="Anime Title 5">
+                
+            </div> <div class="anime-card">
+                <h3>Anime Title 6</h3>
+                <p>Description of Anime 6.</p>
+                <img src="6558842.jpg" alt="Anime Title 6">
+                
+            </div>
+            <div class="anime-card">
+                <h3>Anime Title 7</h3>
+                <p>Description of Anime 7.</p>
+                <img src="6558821.jpg" alt="Anime Title 7">
+                
+            </div>
+
+            <div class="anime-card">
+                <h3>Anime Title 8</h3>
+                <p>Description of Anime 8.</p>
+                <img src="9d09558689f1905e6a37e70fb8ac9cb5.jpg" alt="Anime Title 8">
+                
+            </div>
+            
+            <div class="anime-card">
+                <h3>Anime Title 9</h3>
+                <p>Description of Anime 9.</p>
+                <img src="68bab1dba3a8df0156689263feb57dab.jpg" alt="Anime Title 9">
+            </div>
+            <div class="anime-card">
+                <h3>Anime Title 10</h3>
+                <p>Description of Anime 10.</p>
+                <img src="8921360.jpg" alt="Anime Title 10">
+                
+            </div>
+            <div class="anime-card">
+                <h3>Anime Title 11</h3>
+                <p>Description of Anime 11.</p>
+                <img src="cbc4b4542f76d99337b5648f488bd986.jpg" alt="Anime Title 11">
+                
+            </div> <div class="anime-card">
+                <h3>Anime Title 12</h3>
+                <p>Description of Anime 12.</p>
+                <img src="f1d3bb7a830cf6172f2a7248e6634b4b.jpg" alt="Anime Title 12">
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Anime Website</p>
+    </footer>
+    <script>
+        const headerImages = ["752673.jpg","wp4769493.png","anime-black-clover-asta-black-clover-hd-wallpaper-preview.jpg","blue-lock-anime-characters-931@0@h.jpeg","806916baedf77dba6b2f981804a0d806.jpg",];
+        const header = document.getElementById("header");
+        let currentIndex = 0;
+
+        function ChangeHeaderImage() {
+            // Change the background image on click
+            currentIndex = (currentIndex + 1) % headerImages.length;
+            header.style.backgroundImage = `url(${headerImages[currentIndex]})`;
+            setTimeout(() => {
+            header.style.backgroundImage = `url(${headerImages[currentIndex]})`;
+            header.style.opacity = 1; // Fade in the new image
+            }, 500);
+        }
+        setInterval(ChangeHeaderImage,4000);
+        
+        header.addEventListener("click", () => {
+    // Change the background image on click
+    currentIndex = (currentIndex + 1) % headerImages.length;
+    header.style.backgroundImage = `url(${headerImages[currentIndex]})`;
+});
+
+</script>
+</body>
+</html>
