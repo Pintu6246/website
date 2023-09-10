@@ -14,27 +14,41 @@ body, h1, h2, h3, p {
   /* Create a header with a background image */
   header {
     
-    background-image: url("752673.jpg");
+    background-image: url("737145.png");
     background-size: cover;
     background-position: center top;
     text-align:right;
     padding: 300px 0; /* Increase the padding to expand the header vertically */
     margin-bottom: 20px;
-    color: #e8dfdf;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
     transition: background-image 0.5s ease-in-out;
   }  
   /* Style the header title and subtitle */
   header h1 {
     font-size: 50px;
     margin-bottom: 20px;
+    text-shadow: 10px 10px 10px  #000000;
   }
   header p {
     position: relative;
     left: center;
     font-size: 35px;
-   
+    text-shadow: 10px 10px 10px  #000000;
   }
+    header table {
+      width: 100%;
+    }
+    
+    /* Style for the first column */
+    header td:first-child {
+      width: 50%;
+    }
+    
+    /* Style for the second column (empty) */
+    header td:last-child {
+      text-align: center;
+    }
   h2{
     text-align: center;
     line-height: 100%;
@@ -187,7 +201,7 @@ body, h1, h2, h3, p {
   }
 
   nav a {
-    font-size: 1.5vw; /* Use relative font size */
+    font-size: 2vw; /* Use relative font size */
     margin-right: 10px; /* Reduce margin for smaller screens */
   }
 
