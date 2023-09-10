@@ -187,7 +187,7 @@ body, h1, h2, h3, p {
   }
 
   nav a {
-    font-size: 3vw; /* Use relative font size */
+    font-size: 1.5vw; /* Use relative font size */
     margin-right: 10px; /* Reduce margin for smaller screens */
   }
 
